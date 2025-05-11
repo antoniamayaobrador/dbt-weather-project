@@ -1,0 +1,19 @@
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select wind_speed
+from WEATHER.dbt_antoniamaya_marts.weather_current_metrics
+where wind_speed is null
+
+
+
+      
+    ) dbt_internal_test
