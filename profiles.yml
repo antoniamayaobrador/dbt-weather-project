@@ -1,5 +1,5 @@
-snowflake:
-  target: prod
+weather_project:
+  target: dev
   outputs:
     prod:
       type: snowflake
