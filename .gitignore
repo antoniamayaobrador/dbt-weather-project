@@ -1,0 +1,8 @@
+.env
+# DBT build artifacts
+/target/
+/dbt_modules/
+*.log
+*.pyc
+__pycache__/
+.env.*
