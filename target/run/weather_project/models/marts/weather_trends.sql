@@ -1,30 +1,33 @@
--- back compat for old kwarg name
+
   
-  begin;
     
-        
-            
-	    
-	    
-            
-        
+
+create or replace transient table WEATHER.PALMAPROD_marts.weather_trends
     
 
     
+    as (
 
-    merge into WEATHER.dbt_antoniamaya_marts.weather_trends as DBT_INTERNAL_DEST
-        using WEATHER.dbt_antoniamaya_marts.weather_trends__dbt_tmp as DBT_INTERNAL_SOURCE
-        on ((DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date))
+SELECT
+    date,
+    avg_max_temp,
+    avg_min_temp,
+    avg_precipitation_prob,
+    max_uv_index,
+    weather_conditions,
+    LAG(avg_max_temp) OVER (ORDER BY date) AS prev_avg_max_temp,
+    LAG(avg_min_temp) OVER (ORDER BY date) AS prev_avg_min_temp,
+    LAG(avg_precipitation_prob) OVER (ORDER BY date) AS prev_avg_precipitation_prob,
+    LAG(max_uv_index) OVER (ORDER BY date) AS prev_max_uv_index,
+    avg_max_temp - LAG(avg_max_temp) OVER (ORDER BY date) AS delta_max_temp,
+    avg_min_temp - LAG(avg_min_temp) OVER (ORDER BY date) AS delta_min_temp,
+    avg_precipitation_prob - LAG(avg_precipitation_prob) OVER (ORDER BY date) AS delta_precipitation_prob,
+    max_uv_index - LAG(max_uv_index) OVER (ORDER BY date) AS delta_uv_index
+FROM WEATHER.PALMAPROD_marts.weather_daily_summary
 
-    
-    when matched then update set
-        "DATE" = DBT_INTERNAL_SOURCE."DATE","AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."AVG_MAX_TEMP","AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."AVG_MIN_TEMP","AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."AVG_PRECIPITATION_PROB","MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."MAX_UV_INDEX","WEATHER_CONDITIONS" = DBT_INTERNAL_SOURCE."WEATHER_CONDITIONS","PREV_AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."PREV_AVG_MAX_TEMP","PREV_AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."PREV_AVG_MIN_TEMP","PREV_AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."PREV_AVG_PRECIPITATION_PROB","PREV_MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."PREV_MAX_UV_INDEX","DELTA_MAX_TEMP" = DBT_INTERNAL_SOURCE."DELTA_MAX_TEMP","DELTA_MIN_TEMP" = DBT_INTERNAL_SOURCE."DELTA_MIN_TEMP","DELTA_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."DELTA_PRECIPITATION_PROB","DELTA_UV_INDEX" = DBT_INTERNAL_SOURCE."DELTA_UV_INDEX"
-    
-
-    when not matched then insert
-        ("DATE", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "AVG_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "PREV_AVG_MAX_TEMP", "PREV_AVG_MIN_TEMP", "PREV_AVG_PRECIPITATION_PROB", "PREV_MAX_UV_INDEX", "DELTA_MAX_TEMP", "DELTA_MIN_TEMP", "DELTA_PRECIPITATION_PROB", "DELTA_UV_INDEX")
-    values
-        ("DATE", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "AVG_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "PREV_AVG_MAX_TEMP", "PREV_AVG_MIN_TEMP", "PREV_AVG_PRECIPITATION_PROB", "PREV_MAX_UV_INDEX", "DELTA_MAX_TEMP", "DELTA_MIN_TEMP", "DELTA_PRECIPITATION_PROB", "DELTA_UV_INDEX")
-
+ORDER BY date
+    )
 ;
-    commit;
+
+
+  

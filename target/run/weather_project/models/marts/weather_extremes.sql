@@ -1,30 +1,34 @@
--- back compat for old kwarg name
+
   
-  begin;
     
-        
-            
-	    
-	    
-            
-        
+
+create or replace transient table WEATHER.PALMAPROD_marts.weather_extremes
     
 
     
+    as (
 
-    merge into WEATHER.dbt_antoniamaya_marts.weather_extremes as DBT_INTERNAL_DEST
-        using WEATHER.dbt_antoniamaya_marts.weather_extremes__dbt_tmp as DBT_INTERNAL_SOURCE
-        on ((DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date))
+WITH extremes AS (
+    SELECT
+        date,
+        avg_max_temp,
+        avg_min_temp,
+        avg_precipitation_prob,
+        max_uv_index,
+        weather_conditions,
+        ROW_NUMBER() OVER (ORDER BY avg_max_temp DESC) AS hottest_day,
+        ROW_NUMBER() OVER (ORDER BY avg_min_temp ASC) AS coldest_day,
+        ROW_NUMBER() OVER (ORDER BY avg_precipitation_prob DESC) AS wettest_day,
+        ROW_NUMBER() OVER (ORDER BY max_uv_index DESC) AS highest_uv_day
+    FROM WEATHER.PALMAPROD_marts.weather_daily_summary
+)
 
-    
-    when matched then update set
-        "DATE" = DBT_INTERNAL_SOURCE."DATE","AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."AVG_MAX_TEMP","AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."AVG_MIN_TEMP","AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."AVG_PRECIPITATION_PROB","MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."MAX_UV_INDEX","WEATHER_CONDITIONS" = DBT_INTERNAL_SOURCE."WEATHER_CONDITIONS","HOTTEST_DAY" = DBT_INTERNAL_SOURCE."HOTTEST_DAY","COLDEST_DAY" = DBT_INTERNAL_SOURCE."COLDEST_DAY","WETTEST_DAY" = DBT_INTERNAL_SOURCE."WETTEST_DAY","HIGHEST_UV_DAY" = DBT_INTERNAL_SOURCE."HIGHEST_UV_DAY"
-    
+SELECT * FROM extremes
+WHERE (hottest_day = 1 OR coldest_day = 1 OR wettest_day = 1 OR highest_uv_day = 1)
 
-    when not matched then insert
-        ("DATE", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "AVG_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "HOTTEST_DAY", "COLDEST_DAY", "WETTEST_DAY", "HIGHEST_UV_DAY")
-    values
-        ("DATE", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "AVG_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "HOTTEST_DAY", "COLDEST_DAY", "WETTEST_DAY", "HIGHEST_UV_DAY")
-
+ORDER BY date
+    )
 ;
-    commit;
+
+
+  

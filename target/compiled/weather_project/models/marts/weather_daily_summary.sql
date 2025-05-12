@@ -11,9 +11,7 @@ SELECT
     MAX(precipitation_probability) AS max_precipitation_prob,
     MAX(uv_index) AS max_uv_index,
     LISTAGG(DISTINCT sky_condition, ', ') AS weather_conditions
-FROM WEATHER.dbt_antoniamaya_staging.stg_weather_forecast_daily
-
-  WHERE TO_DATE(forecast_date) > (SELECT max(date) FROM WEATHER.dbt_antoniamaya_marts.weather_daily_summary)
+FROM WEATHER.PALMAPROD_staging.stg_weather_forecast_daily
 
 GROUP BY date
 ORDER BY date

@@ -15,8 +15,6 @@ SELECT
     avg_min_temp - LAG(avg_min_temp) OVER (ORDER BY date) AS delta_min_temp,
     avg_precipitation_prob - LAG(avg_precipitation_prob) OVER (ORDER BY date) AS delta_precipitation_prob,
     max_uv_index - LAG(max_uv_index) OVER (ORDER BY date) AS delta_uv_index
-FROM WEATHER.dbt_antoniamaya_marts.weather_daily_summary
-
-  WHERE date > (SELECT max(date) FROM WEATHER.dbt_antoniamaya_marts.weather_trends)
+FROM WEATHER.PALMAPROD_marts.weather_daily_summary
 
 ORDER BY date

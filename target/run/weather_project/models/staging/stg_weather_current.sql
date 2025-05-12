@@ -1,5 +1,5 @@
 
-  create or replace   view WEATHER.dbt_antoniamaya_staging.stg_weather_current
+  create or replace   view WEATHER.PALMAPROD_staging.stg_weather_current
   
    as (
     

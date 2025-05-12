@@ -9,7 +9,7 @@ WITH latest_current AS (
         sky_condition AS current_sky_condition,
         extracted_at,
         ROW_NUMBER() OVER (PARTITION BY date_time::date ORDER BY extracted_at DESC) AS rn
-    FROM WEATHER.dbt_antoniamaya_marts.weather_current_metrics
+    FROM WEATHER.PALMAPROD_marts.weather_current_metrics
 )
 
 SELECT
@@ -19,9 +19,7 @@ SELECT
     l.current_wind_speed,
     l.current_sky_condition,
     l.extracted_at AS current_extracted_at
-FROM WEATHER.dbt_antoniamaya_marts.weather_daily_summary d
+FROM WEATHER.PALMAPROD_marts.weather_daily_summary d
 LEFT JOIN latest_current l ON d.date = l.date AND l.rn = 1
-
-  WHERE d.date > (SELECT max(date) FROM WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot)
 
 ORDER BY d.date

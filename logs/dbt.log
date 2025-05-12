@@ -18371,3 +18371,1225 @@ drop view if exists WEATHER.dbt_antoniamaya_marts.weather_trends__dbt_tmp cascad
 [0m17:10:38.274744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c213d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d190d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca89d20>]}
 [0m17:10:38.275621 [debug] [MainThread]: Flushing usage events
 [0m17:10:38.830370 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:32:06.078618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1038fee00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046b7100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046b6c80>]}
+
+
+============================== 12:32:06.085347 | 3c6a2591-a88b-40a9-9921-887009bf488b ==============================
+[0m12:32:06.085347 [info ] [MainThread]: Running with dbt=1.9.4
+[0m12:32:06.086257 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/toniamayaobrador/dbt weather project', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/toniamayaobrador/dbt weather project/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m12:32:06.094379 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_ACCOUNT'
+[0m12:32:06.098359 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.13504595, "process_in_blocks": "0", "process_kernel_time": 0.351629, "process_mem_max_rss": "96071680", "process_out_blocks": "0", "process_user_time": 1.866539}
+[0m12:32:06.099208 [debug] [MainThread]: Command `dbt run` failed at 12:32:06.099030 after 0.14 seconds
+[0m12:32:06.099812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1038fee00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104621c60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104623c10>]}
+[0m12:32:06.100480 [debug] [MainThread]: Flushing usage events
+[0m12:32:06.524822 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:32:50.402442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9daf20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7d71c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7d4070>]}
+
+
+============================== 12:32:50.409613 | 2e114ac7-7c43-46b0-9328-54c55391f9b7 ==============================
+[0m12:32:50.409613 [info ] [MainThread]: Running with dbt=1.9.4
+[0m12:32:50.410607 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/toniamayaobrador/dbt weather project', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/toniamayaobrador/dbt weather project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:32:53.431406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad2d030>]}
+[0m12:32:53.532428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d25e350>]}
+[0m12:32:53.533984 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m12:32:53.832738 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m12:32:54.209259 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:32:54.209938 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:32:54.302744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127878130>]}
+[0m12:32:54.507408 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/toniamayaobrador/dbt weather project/target/manifest.json
+[0m12:32:54.511224 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/toniamayaobrador/dbt weather project/target/semantic_manifest.json
+[0m12:32:54.548700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127861fc0>]}
+[0m12:32:54.549973 [info ] [MainThread]: Found 8 models, 42 data tests, 1 source, 476 macros
+[0m12:32:54.550721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1278601f0>]}
+[0m12:32:54.554501 [info ] [MainThread]: 
+[0m12:32:54.555217 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:32:54.555998 [info ] [MainThread]: 
+[0m12:32:54.556908 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:32:54.566215 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_WEATHER'
+[0m12:32:54.677298 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER"
+[0m12:32:54.678242 [debug] [ThreadPool]: On list_WEATHER: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_WEATHER"} */
+show terse schemas in database WEATHER
+    limit 10000
+[0m12:32:54.678954 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:32:55.441854 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.763 seconds
+[0m12:32:55.448149 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER"
+[0m12:32:55.448957 [debug] [ThreadPool]: On list_WEATHER: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_WEATHER"} */
+show terse schemas in database WEATHER
+    limit 10000
+[0m12:32:55.559718 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 0.110 seconds
+[0m12:32:55.563606 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WEATHER, now list_WEATHER_dbt_antoniamaya_staging)
+[0m12:32:55.581750 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_dbt_antoniamaya_staging"
+[0m12:32:55.582783 [debug] [ThreadPool]: On list_WEATHER_dbt_antoniamaya_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_WEATHER_dbt_antoniamaya_staging"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m12:32:55.650763 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.067 seconds
+[0m12:32:55.657905 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_dbt_antoniamaya_staging"
+[0m12:32:55.658609 [debug] [ThreadPool]: On list_WEATHER_dbt_antoniamaya_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_WEATHER_dbt_antoniamaya_staging"} */
+show objects in WEATHER.dbt_antoniamaya_staging
+    limit 10000
+    
+;
+[0m12:32:55.758629 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.099 seconds
+[0m12:32:55.761322 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_dbt_antoniamaya_staging"
+[0m12:32:55.761957 [debug] [ThreadPool]: On list_WEATHER_dbt_antoniamaya_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_WEATHER_dbt_antoniamaya_staging"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m12:32:55.832986 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.070 seconds
+[0m12:32:55.835629 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WEATHER_dbt_antoniamaya_staging, now list_WEATHER_dbt_antoniamaya_marts)
+[0m12:32:55.842346 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_dbt_antoniamaya_marts"
+[0m12:32:55.843045 [debug] [ThreadPool]: On list_WEATHER_dbt_antoniamaya_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_WEATHER_dbt_antoniamaya_marts"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m12:32:55.916772 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.073 seconds
+[0m12:32:55.919718 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_dbt_antoniamaya_marts"
+[0m12:32:55.920517 [debug] [ThreadPool]: On list_WEATHER_dbt_antoniamaya_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_WEATHER_dbt_antoniamaya_marts"} */
+show objects in WEATHER.dbt_antoniamaya_marts
+    limit 10000
+    
+;
+[0m12:32:56.004811 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.084 seconds
+[0m12:32:56.007501 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_dbt_antoniamaya_marts"
+[0m12:32:56.008102 [debug] [ThreadPool]: On list_WEATHER_dbt_antoniamaya_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_WEATHER_dbt_antoniamaya_marts"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m12:32:56.082643 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.074 seconds
+[0m12:32:56.086787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adacc40>]}
+[0m12:32:56.090839 [debug] [Thread-1 (]: Began running node model.weather_project.stg_weather_current
+[0m12:32:56.091920 [info ] [Thread-1 (]: 1 of 8 START sql view model dbt_antoniamaya_staging.stg_weather_current ........ [RUN]
+[0m12:32:56.092732 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_WEATHER_dbt_antoniamaya_marts, now model.weather_project.stg_weather_current)
+[0m12:32:56.093415 [debug] [Thread-1 (]: Began compiling node model.weather_project.stg_weather_current
+[0m12:32:56.107211 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.stg_weather_current"
+[0m12:32:56.109872 [debug] [Thread-1 (]: Began executing node model.weather_project.stg_weather_current
+[0m12:32:56.154770 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.stg_weather_current"
+[0m12:32:56.156738 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.stg_weather_current"
+[0m12:32:56.157468 [debug] [Thread-1 (]: On model.weather_project.stg_weather_current: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.stg_weather_current"} */
+create or replace   view WEATHER.dbt_antoniamaya_staging.stg_weather_current
+  
+   as (
+    
+
+SELECT
+    TO_TIMESTAMP_NTZ(FECHA) AS date_time,
+    CAST(TEMPERATURA_ACTUAL AS NUMBER(4,1)) AS temperature,
+    CAST(HUMEDAD AS NUMBER(4,1)) AS humidity,
+    CAST(VIENTO AS NUMBER(4,1)) AS wind_speed,
+    STATESKY:description::STRING AS sky_condition,
+    _AIRBYTE_EXTRACTED_AT AS extracted_at
+FROM WEATHER.PALMA.PALMA
+  );
+[0m12:32:56.390800 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.233 seconds
+[0m12:32:56.429981 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127dd1060>]}
+[0m12:32:56.431567 [info ] [Thread-1 (]: 1 of 8 OK created sql view model dbt_antoniamaya_staging.stg_weather_current ... [[32mSUCCESS 1[0m in 0.34s]
+[0m12:32:56.432815 [debug] [Thread-1 (]: Finished running node model.weather_project.stg_weather_current
+[0m12:32:56.433527 [debug] [Thread-1 (]: Began running node model.weather_project.stg_weather_forecast_daily
+[0m12:32:56.434535 [info ] [Thread-1 (]: 2 of 8 START sql view model dbt_antoniamaya_staging.stg_weather_forecast_daily . [RUN]
+[0m12:32:56.435375 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.stg_weather_current, now model.weather_project.stg_weather_forecast_daily)
+[0m12:32:56.436022 [debug] [Thread-1 (]: Began compiling node model.weather_project.stg_weather_forecast_daily
+[0m12:32:56.441738 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.stg_weather_forecast_daily"
+[0m12:32:56.442824 [debug] [Thread-1 (]: Began executing node model.weather_project.stg_weather_forecast_daily
+[0m12:32:56.449071 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.stg_weather_forecast_daily"
+[0m12:32:56.452938 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.stg_weather_forecast_daily"
+[0m12:32:56.453820 [debug] [Thread-1 (]: On model.weather_project.stg_weather_forecast_daily: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.stg_weather_forecast_daily"} */
+create or replace   view WEATHER.dbt_antoniamaya_staging.stg_weather_forecast_daily
+  
+   as (
+    
+
+WITH forecast_data AS (
+    SELECT
+        PROXIMOS_DIAS AS forecast_days,
+        _AIRBYTE_EXTRACTED_AT AS extracted_at
+    FROM WEATHER.PALMA.PALMA
+)
+
+SELECT
+    extracted_at,
+    forecast_date,
+    max_temp,
+    min_temp,
+    max_humidity,
+    min_humidity,
+    -- Interpolate precipitation_probability
+    COALESCE(
+        precipitation_probability,
+        (PREV_PRECIP + NEXT_PRECIP) / 2,
+        0
+    ) AS precipitation_probability,
+    -- Interpolate sky_condition using previous non-null value
+    COALESCE(
+        sky_condition,
+        PREV_SKY
+    ) AS sky_condition,
+    -- Interpolate uv_index
+    COALESCE(
+        uv_index,
+        (PREV_UV + NEXT_UV) / 2,
+        0
+    ) AS uv_index
+FROM (
+    SELECT
+        extracted_at,
+        f.value:"@attributes":fecha::STRING AS forecast_date,
+        f.value:temperatura:maxima::NUMBER(4,1) AS max_temp,
+        f.value:temperatura:minima::NUMBER(4,1) AS min_temp,
+        f.value:humedad_relativa:maxima::NUMBER(4,1) AS max_humidity,
+        f.value:humedad_relativa:minima::NUMBER(4,1) AS min_humidity,
+        f.value:prob_precipitacion[0]::NUMBER AS precipitation_probability,
+        f.value:estado_cielo_descripcion[0]::STRING AS sky_condition,
+        f.value:uv_max::NUMBER AS uv_index,
+        -- Previous and next non-null for interpolation
+        LAG(f.value:prob_precipitacion[0]::NUMBER) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS PREV_PRECIP,
+        LEAD(f.value:prob_precipitacion[0]::NUMBER) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS NEXT_PRECIP,
+        LAG(f.value:estado_cielo_descripcion[0]::STRING) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS PREV_SKY,
+        LAG(f.value:uv_max::NUMBER) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS PREV_UV,
+        LEAD(f.value:uv_max::NUMBER) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS NEXT_UV
+    FROM forecast_data,
+    LATERAL FLATTEN(input => forecast_days) f
+)
+  );
+[0m12:32:56.718670 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.264 seconds
+[0m12:32:56.722637 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c177a60>]}
+[0m12:32:56.723806 [info ] [Thread-1 (]: 2 of 8 OK created sql view model dbt_antoniamaya_staging.stg_weather_forecast_daily  [[32mSUCCESS 1[0m in 0.29s]
+[0m12:32:56.724895 [debug] [Thread-1 (]: Finished running node model.weather_project.stg_weather_forecast_daily
+[0m12:32:56.725681 [debug] [Thread-1 (]: Began running node model.weather_project.stg_weather_forecast_hourly
+[0m12:32:56.726689 [info ] [Thread-1 (]: 3 of 8 START sql view model dbt_antoniamaya_staging.stg_weather_forecast_hourly  [RUN]
+[0m12:32:56.727522 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.stg_weather_forecast_daily, now model.weather_project.stg_weather_forecast_hourly)
+[0m12:32:56.728188 [debug] [Thread-1 (]: Began compiling node model.weather_project.stg_weather_forecast_hourly
+[0m12:32:56.733737 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.stg_weather_forecast_hourly"
+[0m12:32:56.735074 [debug] [Thread-1 (]: Began executing node model.weather_project.stg_weather_forecast_hourly
+[0m12:32:56.740222 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.stg_weather_forecast_hourly"
+[0m12:32:56.745519 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.stg_weather_forecast_hourly"
+[0m12:32:56.746401 [debug] [Thread-1 (]: On model.weather_project.stg_weather_forecast_hourly: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.stg_weather_forecast_hourly"} */
+create or replace   view WEATHER.dbt_antoniamaya_staging.stg_weather_forecast_hourly
+  
+   as (
+    
+
+WITH hourly_data AS (
+    SELECT
+        PRONOSTICO:hoy AS hourly_forecast,
+        _AIRBYTE_EXTRACTED_AT AS extracted_at
+    FROM WEATHER.PALMA.PALMA
+),
+
+forecast_date AS (
+    SELECT
+        extracted_at,
+        hourly_forecast:"@attributes":fecha::STRING AS forecast_date
+    FROM hourly_data
+),
+
+temperatures AS (
+    SELECT
+        h.extracted_at,
+        fd.forecast_date,
+        f.index AS hour_index,
+        f.value::NUMBER(4,1) AS temperature
+    FROM hourly_data h
+    JOIN forecast_date fd ON h.extracted_at = fd.extracted_at
+    , LATERAL FLATTEN(input => h.hourly_forecast:temperatura) f
+),
+
+humidity AS (
+    SELECT
+        h.extracted_at,
+        fd.forecast_date,
+        f.index AS hour_index,
+        f.value::NUMBER(4,1) AS humidity
+    FROM hourly_data h
+    JOIN forecast_date fd ON h.extracted_at = fd.extracted_at
+    , LATERAL FLATTEN(input => h.hourly_forecast:humedad_relativa) f
+),
+
+sky_conditions AS (
+    SELECT
+        h.extracted_at,
+        fd.forecast_date,
+        f.index AS hour_index,
+        f.value::STRING AS sky_condition
+    FROM hourly_data h
+    JOIN forecast_date fd ON h.extracted_at = fd.extracted_at
+    , LATERAL FLATTEN(input => h.hourly_forecast:estado_cielo_descripcion) f
+),
+
+wind AS (
+    SELECT
+        h.extracted_at,
+        fd.forecast_date,
+        f.value:"@attributes":periodo::NUMBER AS hour_index,
+        f.value:direccion::STRING AS wind_direction,
+        f.value:velocidad::NUMBER AS wind_speed
+    FROM hourly_data h
+    JOIN forecast_date fd ON h.extracted_at = fd.extracted_at
+    , LATERAL FLATTEN(input => h.hourly_forecast:viento) f
+)
+
+SELECT
+    t.extracted_at,
+    t.forecast_date,
+    t.hour_index,
+    CASE 
+        WHEN t.hour_index = 0 THEN '00:00'
+        WHEN t.hour_index = 6 THEN '06:00'
+        WHEN t.hour_index = 12 THEN '12:00'
+        WHEN t.hour_index = 18 THEN '18:00'
+        ELSE t.hour_index || ':00'
+    END AS time_of_day,
+    COALESCE(t.temperature, 0) AS temperature,
+    COALESCE(h.humidity, 0) AS humidity,
+    COALESCE(s.sky_condition, 'unknown') AS sky_condition,
+    COALESCE(w.wind_direction, 'unknown') AS wind_direction,
+    COALESCE(w.wind_speed, 0) AS wind_speed
+FROM temperatures t
+LEFT JOIN humidity h ON t.extracted_at = h.extracted_at AND t.hour_index = h.hour_index AND t.forecast_date = h.forecast_date
+LEFT JOIN sky_conditions s ON t.extracted_at = s.extracted_at AND t.hour_index = s.hour_index AND t.forecast_date = s.forecast_date
+LEFT JOIN wind w ON t.extracted_at = w.extracted_at AND t.hour_index = w.hour_index AND t.forecast_date = w.forecast_date
+  );
+[0m12:32:56.989574 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.242 seconds
+[0m12:32:56.994892 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127f8cca0>]}
+[0m12:32:56.996048 [info ] [Thread-1 (]: 3 of 8 OK created sql view model dbt_antoniamaya_staging.stg_weather_forecast_hourly  [[32mSUCCESS 1[0m in 0.27s]
+[0m12:32:56.997124 [debug] [Thread-1 (]: Finished running node model.weather_project.stg_weather_forecast_hourly
+[0m12:32:56.998101 [debug] [Thread-1 (]: Began running node model.weather_project.weather_current_metrics
+[0m12:32:56.998968 [info ] [Thread-1 (]: 4 of 8 START sql incremental model dbt_antoniamaya_marts.weather_current_metrics  [RUN]
+[0m12:32:56.999858 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.stg_weather_forecast_hourly, now model.weather_project.weather_current_metrics)
+[0m12:32:57.000511 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_current_metrics
+[0m12:32:57.013758 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_current_metrics"
+[0m12:32:57.015120 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_current_metrics
+[0m12:32:57.079358 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m12:32:57.080230 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_current_metrics"} */
+create or replace  temporary view WEATHER.dbt_antoniamaya_marts.weather_current_metrics__dbt_tmp
+  
+   as (
+    
+
+SELECT 
+    date_time,
+    temperature,
+    humidity,
+    wind_speed,
+    sky_condition,
+    extracted_at
+FROM WEATHER.dbt_antoniamaya_staging.stg_weather_current
+
+
+  WHERE extracted_at > (SELECT MAX(extracted_at) FROM WEATHER.dbt_antoniamaya_marts.weather_current_metrics)
+
+  );
+[0m12:32:57.313870 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.233 seconds
+[0m12:32:57.330552 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m12:32:57.331795 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_current_metrics"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_current_metrics__dbt_tmp
+[0m12:32:57.418075 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.085 seconds
+[0m12:32:57.425510 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m12:32:57.426315 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_current_metrics"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_current_metrics
+[0m12:32:57.493714 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.067 seconds
+[0m12:32:57.505976 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m12:32:57.506838 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_current_metrics"} */
+describe table "WEATHER"."DBT_ANTONIAMAYA_MARTS"."WEATHER_CURRENT_METRICS"
+[0m12:32:57.577286 [debug] [Thread-1 (]: SQL status: SUCCESS 6 in 0.070 seconds
+[0m12:32:57.629724 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_current_metrics"
+[0m12:32:57.632418 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m12:32:57.633234 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_current_metrics"} */
+-- back compat for old kwarg name
+  
+  begin;
+[0m12:32:57.724315 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.090 seconds
+[0m12:32:57.725205 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m12:32:57.726032 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_current_metrics"} */
+merge into WEATHER.dbt_antoniamaya_marts.weather_current_metrics as DBT_INTERNAL_DEST
+        using WEATHER.dbt_antoniamaya_marts.weather_current_metrics__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.date_time = DBT_INTERNAL_DEST.date_time))
+
+    
+    when matched then update set
+        "DATE_TIME" = DBT_INTERNAL_SOURCE."DATE_TIME","TEMPERATURE" = DBT_INTERNAL_SOURCE."TEMPERATURE","HUMIDITY" = DBT_INTERNAL_SOURCE."HUMIDITY","WIND_SPEED" = DBT_INTERNAL_SOURCE."WIND_SPEED","SKY_CONDITION" = DBT_INTERNAL_SOURCE."SKY_CONDITION","EXTRACTED_AT" = DBT_INTERNAL_SOURCE."EXTRACTED_AT"
+    
+
+    when not matched then insert
+        ("DATE_TIME", "TEMPERATURE", "HUMIDITY", "WIND_SPEED", "SKY_CONDITION", "EXTRACTED_AT")
+    values
+        ("DATE_TIME", "TEMPERATURE", "HUMIDITY", "WIND_SPEED", "SKY_CONDITION", "EXTRACTED_AT")
+
+;
+[0m12:32:58.805089 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 1.078 seconds
+[0m12:32:58.806033 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m12:32:58.806727 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_current_metrics"} */
+COMMIT
+[0m12:32:58.998165 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.191 seconds
+[0m12:32:59.010978 [debug] [Thread-1 (]: Applying DROP to: WEATHER.dbt_antoniamaya_marts.weather_current_metrics__dbt_tmp
+[0m12:32:59.021132 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m12:32:59.021993 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_current_metrics"} */
+drop view if exists WEATHER.dbt_antoniamaya_marts.weather_current_metrics__dbt_tmp cascade
+[0m12:32:59.115430 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.093 seconds
+[0m12:32:59.119088 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127fc8c40>]}
+[0m12:32:59.120286 [info ] [Thread-1 (]: 4 of 8 OK created sql incremental model dbt_antoniamaya_marts.weather_current_metrics  [[32mSUCCESS 0[0m in 2.12s]
+[0m12:32:59.121412 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_current_metrics
+[0m12:32:59.122136 [debug] [Thread-1 (]: Began running node model.weather_project.weather_daily_summary
+[0m12:32:59.123059 [info ] [Thread-1 (]: 5 of 8 START sql incremental model dbt_antoniamaya_marts.weather_daily_summary . [RUN]
+[0m12:32:59.123867 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.weather_current_metrics, now model.weather_project.weather_daily_summary)
+[0m12:32:59.124530 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_daily_summary
+[0m12:32:59.130466 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_daily_summary"
+[0m12:32:59.131985 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_daily_summary
+[0m12:32:59.140235 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m12:32:59.141139 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_summary"} */
+create or replace  temporary view WEATHER.dbt_antoniamaya_marts.weather_daily_summary__dbt_tmp
+  
+   as (
+    
+
+SELECT
+    TO_DATE(forecast_date) AS date,
+    MAX(extracted_at) AS last_updated,
+    AVG(max_temp) AS avg_max_temp,
+    AVG(min_temp) AS avg_min_temp,
+    MAX(max_temp) AS highest_temp,
+    MIN(min_temp) AS lowest_temp,
+    AVG(precipitation_probability) AS avg_precipitation_prob,
+    MAX(precipitation_probability) AS max_precipitation_prob,
+    MAX(uv_index) AS max_uv_index,
+    LISTAGG(DISTINCT sky_condition, ', ') AS weather_conditions
+FROM WEATHER.dbt_antoniamaya_staging.stg_weather_forecast_daily
+
+  WHERE TO_DATE(forecast_date) > (SELECT max(date) FROM WEATHER.dbt_antoniamaya_marts.weather_daily_summary)
+
+GROUP BY date
+ORDER BY date
+  );
+[0m12:32:59.428104 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.286 seconds
+[0m12:32:59.433312 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m12:32:59.434084 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_summary"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_daily_summary__dbt_tmp
+[0m12:32:59.513194 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.078 seconds
+[0m12:32:59.519904 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m12:32:59.520731 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_summary"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_daily_summary
+[0m12:32:59.587133 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.066 seconds
+[0m12:32:59.594538 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m12:32:59.595298 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_summary"} */
+describe table "WEATHER"."DBT_ANTONIAMAYA_MARTS"."WEATHER_DAILY_SUMMARY"
+[0m12:32:59.655239 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.059 seconds
+[0m12:32:59.661168 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_daily_summary"
+[0m12:32:59.664432 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m12:32:59.665112 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_summary"} */
+-- back compat for old kwarg name
+  
+  begin;
+[0m12:32:59.740541 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.075 seconds
+[0m12:32:59.741414 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m12:32:59.742176 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_summary"} */
+merge into WEATHER.dbt_antoniamaya_marts.weather_daily_summary as DBT_INTERNAL_DEST
+        using WEATHER.dbt_antoniamaya_marts.weather_daily_summary__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date))
+
+    
+    when matched then update set
+        "DATE" = DBT_INTERNAL_SOURCE."DATE","LAST_UPDATED" = DBT_INTERNAL_SOURCE."LAST_UPDATED","AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."AVG_MAX_TEMP","AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."AVG_MIN_TEMP","HIGHEST_TEMP" = DBT_INTERNAL_SOURCE."HIGHEST_TEMP","LOWEST_TEMP" = DBT_INTERNAL_SOURCE."LOWEST_TEMP","AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."AVG_PRECIPITATION_PROB","MAX_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."MAX_PRECIPITATION_PROB","MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."MAX_UV_INDEX","WEATHER_CONDITIONS" = DBT_INTERNAL_SOURCE."WEATHER_CONDITIONS"
+    
+
+    when not matched then insert
+        ("DATE", "LAST_UPDATED", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "HIGHEST_TEMP", "LOWEST_TEMP", "AVG_PRECIPITATION_PROB", "MAX_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS")
+    values
+        ("DATE", "LAST_UPDATED", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "HIGHEST_TEMP", "LOWEST_TEMP", "AVG_PRECIPITATION_PROB", "MAX_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS")
+
+;
+[0m12:33:00.505846 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.763 seconds
+[0m12:33:00.506802 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m12:33:00.507504 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_summary"} */
+COMMIT
+[0m12:33:00.698550 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.190 seconds
+[0m12:33:00.703811 [debug] [Thread-1 (]: Applying DROP to: WEATHER.dbt_antoniamaya_marts.weather_daily_summary__dbt_tmp
+[0m12:33:00.705476 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m12:33:00.706147 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_summary"} */
+drop view if exists WEATHER.dbt_antoniamaya_marts.weather_daily_summary__dbt_tmp cascade
+[0m12:33:00.800079 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.093 seconds
+[0m12:33:00.803983 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c177a60>]}
+[0m12:33:00.805033 [info ] [Thread-1 (]: 5 of 8 OK created sql incremental model dbt_antoniamaya_marts.weather_daily_summary  [[32mSUCCESS 0[0m in 1.68s]
+[0m12:33:00.806092 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_daily_summary
+[0m12:33:00.807365 [debug] [Thread-1 (]: Began running node model.weather_project.weather_daily_snapshot
+[0m12:33:00.808250 [info ] [Thread-1 (]: 6 of 8 START sql incremental model dbt_antoniamaya_marts.weather_daily_snapshot  [RUN]
+[0m12:33:00.809091 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.weather_daily_summary, now model.weather_project.weather_daily_snapshot)
+[0m12:33:00.809769 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_daily_snapshot
+[0m12:33:00.818486 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_daily_snapshot"
+[0m12:33:00.819988 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_daily_snapshot
+[0m12:33:00.827418 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m12:33:00.828358 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_snapshot"} */
+create or replace  temporary view WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot__dbt_tmp
+  
+   as (
+    
+
+WITH latest_current AS (
+    SELECT
+        date_time::date AS date,
+        temperature AS current_temperature,
+        humidity AS current_humidity,
+        wind_speed AS current_wind_speed,
+        sky_condition AS current_sky_condition,
+        extracted_at,
+        ROW_NUMBER() OVER (PARTITION BY date_time::date ORDER BY extracted_at DESC) AS rn
+    FROM WEATHER.dbt_antoniamaya_marts.weather_current_metrics
+)
+
+SELECT
+    d.*, 
+    l.current_temperature,
+    l.current_humidity,
+    l.current_wind_speed,
+    l.current_sky_condition,
+    l.extracted_at AS current_extracted_at
+FROM WEATHER.dbt_antoniamaya_marts.weather_daily_summary d
+LEFT JOIN latest_current l ON d.date = l.date AND l.rn = 1
+
+  WHERE d.date > (SELECT max(date) FROM WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot)
+
+ORDER BY d.date
+  );
+[0m12:33:01.087530 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.258 seconds
+[0m12:33:01.092758 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m12:33:01.093564 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_snapshot"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot__dbt_tmp
+[0m12:33:01.169239 [debug] [Thread-1 (]: SQL status: SUCCESS 15 in 0.075 seconds
+[0m12:33:01.175952 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m12:33:01.176708 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_snapshot"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot
+[0m12:33:01.237052 [debug] [Thread-1 (]: SQL status: SUCCESS 15 in 0.060 seconds
+[0m12:33:01.243547 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m12:33:01.244269 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_snapshot"} */
+describe table "WEATHER"."DBT_ANTONIAMAYA_MARTS"."WEATHER_DAILY_SNAPSHOT"
+[0m12:33:01.313315 [debug] [Thread-1 (]: SQL status: SUCCESS 15 in 0.068 seconds
+[0m12:33:01.320003 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_daily_snapshot"
+[0m12:33:01.322852 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m12:33:01.323526 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_snapshot"} */
+-- back compat for old kwarg name
+  
+  begin;
+[0m12:33:01.398477 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.074 seconds
+[0m12:33:01.399390 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m12:33:01.400179 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_snapshot"} */
+merge into WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot as DBT_INTERNAL_DEST
+        using WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date))
+
+    
+    when matched then update set
+        "DATE" = DBT_INTERNAL_SOURCE."DATE","LAST_UPDATED" = DBT_INTERNAL_SOURCE."LAST_UPDATED","AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."AVG_MAX_TEMP","AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."AVG_MIN_TEMP","HIGHEST_TEMP" = DBT_INTERNAL_SOURCE."HIGHEST_TEMP","LOWEST_TEMP" = DBT_INTERNAL_SOURCE."LOWEST_TEMP","AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."AVG_PRECIPITATION_PROB","MAX_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."MAX_PRECIPITATION_PROB","MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."MAX_UV_INDEX","WEATHER_CONDITIONS" = DBT_INTERNAL_SOURCE."WEATHER_CONDITIONS","CURRENT_TEMPERATURE" = DBT_INTERNAL_SOURCE."CURRENT_TEMPERATURE","CURRENT_HUMIDITY" = DBT_INTERNAL_SOURCE."CURRENT_HUMIDITY","CURRENT_WIND_SPEED" = DBT_INTERNAL_SOURCE."CURRENT_WIND_SPEED","CURRENT_SKY_CONDITION" = DBT_INTERNAL_SOURCE."CURRENT_SKY_CONDITION","CURRENT_EXTRACTED_AT" = DBT_INTERNAL_SOURCE."CURRENT_EXTRACTED_AT"
+    
+
+    when not matched then insert
+        ("DATE", "LAST_UPDATED", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "HIGHEST_TEMP", "LOWEST_TEMP", "AVG_PRECIPITATION_PROB", "MAX_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "CURRENT_TEMPERATURE", "CURRENT_HUMIDITY", "CURRENT_WIND_SPEED", "CURRENT_SKY_CONDITION", "CURRENT_EXTRACTED_AT")
+    values
+        ("DATE", "LAST_UPDATED", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "HIGHEST_TEMP", "LOWEST_TEMP", "AVG_PRECIPITATION_PROB", "MAX_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "CURRENT_TEMPERATURE", "CURRENT_HUMIDITY", "CURRENT_WIND_SPEED", "CURRENT_SKY_CONDITION", "CURRENT_EXTRACTED_AT")
+
+;
+[0m12:33:02.071420 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.670 seconds
+[0m12:33:02.072352 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m12:33:02.073008 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_snapshot"} */
+COMMIT
+[0m12:33:02.250830 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.177 seconds
+[0m12:33:02.255901 [debug] [Thread-1 (]: Applying DROP to: WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot__dbt_tmp
+[0m12:33:02.257503 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m12:33:02.258197 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_daily_snapshot"} */
+drop view if exists WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot__dbt_tmp cascade
+[0m12:33:02.354413 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.096 seconds
+[0m12:33:02.358003 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127f8e290>]}
+[0m12:33:02.359119 [info ] [Thread-1 (]: 6 of 8 OK created sql incremental model dbt_antoniamaya_marts.weather_daily_snapshot  [[32mSUCCESS 0[0m in 1.55s]
+[0m12:33:02.360107 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_daily_snapshot
+[0m12:33:02.360784 [debug] [Thread-1 (]: Began running node model.weather_project.weather_extremes
+[0m12:33:02.361682 [info ] [Thread-1 (]: 7 of 8 START sql incremental model dbt_antoniamaya_marts.weather_extremes ...... [RUN]
+[0m12:33:02.362480 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.weather_daily_snapshot, now model.weather_project.weather_extremes)
+[0m12:33:02.363166 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_extremes
+[0m12:33:02.371368 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_extremes"
+[0m12:33:02.372494 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_extremes
+[0m12:33:02.379097 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m12:33:02.379969 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_extremes"} */
+create or replace  temporary view WEATHER.dbt_antoniamaya_marts.weather_extremes__dbt_tmp
+  
+   as (
+    
+
+WITH extremes AS (
+    SELECT
+        date,
+        avg_max_temp,
+        avg_min_temp,
+        avg_precipitation_prob,
+        max_uv_index,
+        weather_conditions,
+        ROW_NUMBER() OVER (ORDER BY avg_max_temp DESC) AS hottest_day,
+        ROW_NUMBER() OVER (ORDER BY avg_min_temp ASC) AS coldest_day,
+        ROW_NUMBER() OVER (ORDER BY avg_precipitation_prob DESC) AS wettest_day,
+        ROW_NUMBER() OVER (ORDER BY max_uv_index DESC) AS highest_uv_day
+    FROM WEATHER.dbt_antoniamaya_marts.weather_daily_summary
+)
+
+SELECT * FROM extremes
+WHERE (hottest_day = 1 OR coldest_day = 1 OR wettest_day = 1 OR highest_uv_day = 1)
+
+  AND date > (SELECT max(date) FROM WEATHER.dbt_antoniamaya_marts.weather_extremes)
+
+ORDER BY date
+  );
+[0m12:33:02.556862 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.176 seconds
+[0m12:33:02.561637 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m12:33:02.562374 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_extremes"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_extremes__dbt_tmp
+[0m12:33:02.632813 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.070 seconds
+[0m12:33:02.638651 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m12:33:02.639419 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_extremes"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_extremes
+[0m12:33:02.717486 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.077 seconds
+[0m12:33:02.723481 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m12:33:02.724223 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_extremes"} */
+describe table "WEATHER"."DBT_ANTONIAMAYA_MARTS"."WEATHER_EXTREMES"
+[0m12:33:02.781835 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.057 seconds
+[0m12:33:02.787504 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_extremes"
+[0m12:33:02.789910 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m12:33:02.790658 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_extremes"} */
+-- back compat for old kwarg name
+  
+  begin;
+[0m12:33:02.870556 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.079 seconds
+[0m12:33:02.871510 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m12:33:02.872287 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_extremes"} */
+merge into WEATHER.dbt_antoniamaya_marts.weather_extremes as DBT_INTERNAL_DEST
+        using WEATHER.dbt_antoniamaya_marts.weather_extremes__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date))
+
+    
+    when matched then update set
+        "DATE" = DBT_INTERNAL_SOURCE."DATE","AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."AVG_MAX_TEMP","AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."AVG_MIN_TEMP","AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."AVG_PRECIPITATION_PROB","MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."MAX_UV_INDEX","WEATHER_CONDITIONS" = DBT_INTERNAL_SOURCE."WEATHER_CONDITIONS","HOTTEST_DAY" = DBT_INTERNAL_SOURCE."HOTTEST_DAY","COLDEST_DAY" = DBT_INTERNAL_SOURCE."COLDEST_DAY","WETTEST_DAY" = DBT_INTERNAL_SOURCE."WETTEST_DAY","HIGHEST_UV_DAY" = DBT_INTERNAL_SOURCE."HIGHEST_UV_DAY"
+    
+
+    when not matched then insert
+        ("DATE", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "AVG_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "HOTTEST_DAY", "COLDEST_DAY", "WETTEST_DAY", "HIGHEST_UV_DAY")
+    values
+        ("DATE", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "AVG_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "HOTTEST_DAY", "COLDEST_DAY", "WETTEST_DAY", "HIGHEST_UV_DAY")
+
+;
+[0m12:33:03.644125 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.771 seconds
+[0m12:33:03.645395 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m12:33:03.646061 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_extremes"} */
+COMMIT
+[0m12:33:03.828128 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.181 seconds
+[0m12:33:03.833718 [debug] [Thread-1 (]: Applying DROP to: WEATHER.dbt_antoniamaya_marts.weather_extremes__dbt_tmp
+[0m12:33:03.835538 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m12:33:03.836233 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_extremes"} */
+drop view if exists WEATHER.dbt_antoniamaya_marts.weather_extremes__dbt_tmp cascade
+[0m12:33:03.925986 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.089 seconds
+[0m12:33:03.929468 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127fc8c40>]}
+[0m12:33:03.930460 [info ] [Thread-1 (]: 7 of 8 OK created sql incremental model dbt_antoniamaya_marts.weather_extremes . [[32mSUCCESS 0[0m in 1.57s]
+[0m12:33:03.931446 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_extremes
+[0m12:33:03.932131 [debug] [Thread-1 (]: Began running node model.weather_project.weather_trends
+[0m12:33:03.933012 [info ] [Thread-1 (]: 8 of 8 START sql incremental model dbt_antoniamaya_marts.weather_trends ........ [RUN]
+[0m12:33:03.933948 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.weather_extremes, now model.weather_project.weather_trends)
+[0m12:33:03.934791 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_trends
+[0m12:33:03.942407 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_trends"
+[0m12:33:03.943806 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_trends
+[0m12:33:03.951171 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m12:33:03.952083 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_trends"} */
+create or replace  temporary view WEATHER.dbt_antoniamaya_marts.weather_trends__dbt_tmp
+  
+   as (
+    
+
+SELECT
+    date,
+    avg_max_temp,
+    avg_min_temp,
+    avg_precipitation_prob,
+    max_uv_index,
+    weather_conditions,
+    LAG(avg_max_temp) OVER (ORDER BY date) AS prev_avg_max_temp,
+    LAG(avg_min_temp) OVER (ORDER BY date) AS prev_avg_min_temp,
+    LAG(avg_precipitation_prob) OVER (ORDER BY date) AS prev_avg_precipitation_prob,
+    LAG(max_uv_index) OVER (ORDER BY date) AS prev_max_uv_index,
+    avg_max_temp - LAG(avg_max_temp) OVER (ORDER BY date) AS delta_max_temp,
+    avg_min_temp - LAG(avg_min_temp) OVER (ORDER BY date) AS delta_min_temp,
+    avg_precipitation_prob - LAG(avg_precipitation_prob) OVER (ORDER BY date) AS delta_precipitation_prob,
+    max_uv_index - LAG(max_uv_index) OVER (ORDER BY date) AS delta_uv_index
+FROM WEATHER.dbt_antoniamaya_marts.weather_daily_summary
+
+  WHERE date > (SELECT max(date) FROM WEATHER.dbt_antoniamaya_marts.weather_trends)
+
+ORDER BY date
+  );
+[0m12:33:04.208279 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.255 seconds
+[0m12:33:04.212753 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m12:33:04.213428 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_trends"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_trends__dbt_tmp
+[0m12:33:04.282120 [debug] [Thread-1 (]: SQL status: SUCCESS 14 in 0.068 seconds
+[0m12:33:04.289355 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m12:33:04.290168 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_trends"} */
+describe table WEATHER.dbt_antoniamaya_marts.weather_trends
+[0m12:33:04.354817 [debug] [Thread-1 (]: SQL status: SUCCESS 14 in 0.064 seconds
+[0m12:33:04.361350 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m12:33:04.362102 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_trends"} */
+describe table "WEATHER"."DBT_ANTONIAMAYA_MARTS"."WEATHER_TRENDS"
+[0m12:33:04.426584 [debug] [Thread-1 (]: SQL status: SUCCESS 14 in 0.064 seconds
+[0m12:33:04.433507 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_trends"
+[0m12:33:04.436390 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m12:33:04.437096 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_trends"} */
+-- back compat for old kwarg name
+  
+  begin;
+[0m12:33:04.508873 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.071 seconds
+[0m12:33:04.509717 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m12:33:04.510518 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_trends"} */
+merge into WEATHER.dbt_antoniamaya_marts.weather_trends as DBT_INTERNAL_DEST
+        using WEATHER.dbt_antoniamaya_marts.weather_trends__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date))
+
+    
+    when matched then update set
+        "DATE" = DBT_INTERNAL_SOURCE."DATE","AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."AVG_MAX_TEMP","AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."AVG_MIN_TEMP","AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."AVG_PRECIPITATION_PROB","MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."MAX_UV_INDEX","WEATHER_CONDITIONS" = DBT_INTERNAL_SOURCE."WEATHER_CONDITIONS","PREV_AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."PREV_AVG_MAX_TEMP","PREV_AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."PREV_AVG_MIN_TEMP","PREV_AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."PREV_AVG_PRECIPITATION_PROB","PREV_MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."PREV_MAX_UV_INDEX","DELTA_MAX_TEMP" = DBT_INTERNAL_SOURCE."DELTA_MAX_TEMP","DELTA_MIN_TEMP" = DBT_INTERNAL_SOURCE."DELTA_MIN_TEMP","DELTA_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."DELTA_PRECIPITATION_PROB","DELTA_UV_INDEX" = DBT_INTERNAL_SOURCE."DELTA_UV_INDEX"
+    
+
+    when not matched then insert
+        ("DATE", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "AVG_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "PREV_AVG_MAX_TEMP", "PREV_AVG_MIN_TEMP", "PREV_AVG_PRECIPITATION_PROB", "PREV_MAX_UV_INDEX", "DELTA_MAX_TEMP", "DELTA_MIN_TEMP", "DELTA_PRECIPITATION_PROB", "DELTA_UV_INDEX")
+    values
+        ("DATE", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "AVG_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "PREV_AVG_MAX_TEMP", "PREV_AVG_MIN_TEMP", "PREV_AVG_PRECIPITATION_PROB", "PREV_MAX_UV_INDEX", "DELTA_MAX_TEMP", "DELTA_MIN_TEMP", "DELTA_PRECIPITATION_PROB", "DELTA_UV_INDEX")
+
+;
+[0m12:33:05.202450 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.691 seconds
+[0m12:33:05.203340 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m12:33:05.203990 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_trends"} */
+COMMIT
+[0m12:33:05.375620 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.171 seconds
+[0m12:33:05.381682 [debug] [Thread-1 (]: Applying DROP to: WEATHER.dbt_antoniamaya_marts.weather_trends__dbt_tmp
+[0m12:33:05.383396 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m12:33:05.384064 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_project.weather_trends"} */
+drop view if exists WEATHER.dbt_antoniamaya_marts.weather_trends__dbt_tmp cascade
+[0m12:33:05.472260 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.087 seconds
+[0m12:33:05.475937 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e114ac7-7c43-46b0-9328-54c55391f9b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127fc8c40>]}
+[0m12:33:05.476991 [info ] [Thread-1 (]: 8 of 8 OK created sql incremental model dbt_antoniamaya_marts.weather_trends ... [[32mSUCCESS 0[0m in 1.54s]
+[0m12:33:05.477984 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_trends
+[0m12:33:05.479616 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:33:05.480192 [debug] [MainThread]: Connection 'model.weather_project.weather_trends' was left open.
+[0m12:33:05.480760 [debug] [MainThread]: On model.weather_project.weather_trends: Close
+[0m12:33:05.579965 [info ] [MainThread]: 
+[0m12:33:05.580743 [info ] [MainThread]: Finished running 5 incremental models, 3 view models in 0 hours 0 minutes and 11.02 seconds (11.02s).
+[0m12:33:05.583819 [debug] [MainThread]: Command end result
+[0m12:33:05.725170 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/toniamayaobrador/dbt weather project/target/manifest.json
+[0m12:33:05.728030 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/toniamayaobrador/dbt weather project/target/semantic_manifest.json
+[0m12:33:05.739787 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/toniamayaobrador/dbt weather project/target/run_results.json
+[0m12:33:05.740526 [info ] [MainThread]: 
+[0m12:33:05.741488 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:33:05.742125 [info ] [MainThread]: 
+[0m12:33:05.742750 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m12:33:05.749620 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 15.473183, "process_in_blocks": "0", "process_kernel_time": 1.632059, "process_mem_max_rss": "187002880", "process_out_blocks": "0", "process_user_time": 6.199907}
+[0m12:33:05.750656 [debug] [MainThread]: Command `dbt run` succeeded at 12:33:05.750456 after 15.47 seconds
+[0m12:33:05.751386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9daf20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127f23e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127f22800>]}
+[0m12:33:05.752072 [debug] [MainThread]: Flushing usage events
+[0m12:33:06.291734 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:51:22.078776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d43ef50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2031c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e202da0>]}
+
+
+============================== 14:51:22.084536 | f25621e6-bac8-4f1f-b023-1839b2b6a6a7 ==============================
+[0m14:51:22.084536 [info ] [MainThread]: Running with dbt=1.9.4
+[0m14:51:22.085280 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/toniamayaobrador/dbt weather project/logs', 'profiles_dir': '/Users/toniamayaobrador/dbt weather project', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --target PALMAPROD', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:51:23.786188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127e48b20>]}
+[0m14:51:23.858237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d58a020>]}
+[0m14:51:23.859612 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m14:51:24.075817 [debug] [MainThread]: checksum: 008ff300f3cd069c0fbecde66d39b37a8bfa7d2979d3587dc5febddd6428a024, vars: {}, profile: , target: PALMAPROD, version: 1.9.4
+[0m14:51:24.300036 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m14:51:24.300574 [debug] [MainThread]: previous checksum: 008ff300f3cd069c0fbecde66d39b37a8bfa7d2979d3587dc5febddd6428a024, current checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c
+[0m14:51:24.300983 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m14:51:24.301431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dcc9db0>]}
+[0m14:51:26.177058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1286dc100>]}
+[0m14:51:26.382428 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/toniamayaobrador/dbt weather project/target/manifest.json
+[0m14:51:26.385568 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/toniamayaobrador/dbt weather project/target/semantic_manifest.json
+[0m14:51:26.420327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128719000>]}
+[0m14:51:26.421129 [info ] [MainThread]: Found 8 models, 42 data tests, 1 source, 476 macros
+[0m14:51:26.421710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128719150>]}
+[0m14:51:26.425179 [info ] [MainThread]: 
+[0m14:51:26.425780 [info ] [MainThread]: Concurrency: 1 threads (target='PALMAPROD')
+[0m14:51:26.426322 [info ] [MainThread]: 
+[0m14:51:26.427120 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:51:26.435179 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_WEATHER'
+[0m14:51:26.533583 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER"
+[0m14:51:26.534187 [debug] [ThreadPool]: On list_WEATHER: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "list_WEATHER"} */
+show terse schemas in database WEATHER
+    limit 10000
+[0m14:51:26.534750 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:51:27.152454 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.617 seconds
+[0m14:51:27.157991 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER"
+[0m14:51:27.158587 [debug] [ThreadPool]: On list_WEATHER: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "list_WEATHER"} */
+show terse schemas in database WEATHER
+    limit 10000
+[0m14:51:27.230279 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.071 seconds
+[0m14:51:27.232960 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WEATHER, now create_WEATHER_PALMAPROD_marts)
+[0m14:51:27.234398 [debug] [ThreadPool]: Creating schema "database: "WEATHER"
+schema: "PALMAPROD_marts"
+"
+[0m14:51:27.240380 [debug] [ThreadPool]: Using snowflake connection "create_WEATHER_PALMAPROD_marts"
+[0m14:51:27.240843 [debug] [ThreadPool]: On create_WEATHER_PALMAPROD_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "create_WEATHER_PALMAPROD_marts"} */
+create schema if not exists WEATHER.PALMAPROD_marts
+[0m14:51:27.337532 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.096 seconds
+[0m14:51:27.339021 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_WEATHER_PALMAPROD_marts, now create_WEATHER_PALMAPROD_staging)
+[0m14:51:27.339688 [debug] [ThreadPool]: Creating schema "database: "WEATHER"
+schema: "PALMAPROD_staging"
+"
+[0m14:51:27.342623 [debug] [ThreadPool]: Using snowflake connection "create_WEATHER_PALMAPROD_staging"
+[0m14:51:27.343111 [debug] [ThreadPool]: On create_WEATHER_PALMAPROD_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "create_WEATHER_PALMAPROD_staging"} */
+create schema if not exists WEATHER.PALMAPROD_staging
+[0m14:51:27.454937 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.111 seconds
+[0m14:51:27.458585 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_WEATHER_PALMAPROD_staging, now list_WEATHER_PALMAPROD_marts)
+[0m14:51:27.477542 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_PALMAPROD_marts"
+[0m14:51:27.478162 [debug] [ThreadPool]: On list_WEATHER_PALMAPROD_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "list_WEATHER_PALMAPROD_marts"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m14:51:27.551221 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.072 seconds
+[0m14:51:27.557022 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_PALMAPROD_marts"
+[0m14:51:27.557583 [debug] [ThreadPool]: On list_WEATHER_PALMAPROD_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "list_WEATHER_PALMAPROD_marts"} */
+show objects in WEATHER.PALMAPROD_marts
+    limit 10000
+    
+;
+[0m14:51:27.638020 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.080 seconds
+[0m14:51:27.639867 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_PALMAPROD_marts"
+[0m14:51:27.640327 [debug] [ThreadPool]: On list_WEATHER_PALMAPROD_marts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "list_WEATHER_PALMAPROD_marts"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m14:51:27.711131 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.070 seconds
+[0m14:51:27.714957 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_WEATHER_PALMAPROD_marts, now list_WEATHER_PALMAPROD_staging)
+[0m14:51:27.718093 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_PALMAPROD_staging"
+[0m14:51:27.718617 [debug] [ThreadPool]: On list_WEATHER_PALMAPROD_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "list_WEATHER_PALMAPROD_staging"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m14:51:27.785675 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.067 seconds
+[0m14:51:27.787609 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_PALMAPROD_staging"
+[0m14:51:27.788055 [debug] [ThreadPool]: On list_WEATHER_PALMAPROD_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "list_WEATHER_PALMAPROD_staging"} */
+show objects in WEATHER.PALMAPROD_staging
+    limit 10000
+    
+;
+[0m14:51:27.861047 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.072 seconds
+[0m14:51:27.863609 [debug] [ThreadPool]: Using snowflake connection "list_WEATHER_PALMAPROD_staging"
+[0m14:51:27.864155 [debug] [ThreadPool]: On list_WEATHER_PALMAPROD_staging: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "connection_name": "list_WEATHER_PALMAPROD_staging"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m14:51:27.934888 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.070 seconds
+[0m14:51:27.936719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128558a00>]}
+[0m14:51:27.939683 [debug] [Thread-1 (]: Began running node model.weather_project.stg_weather_current
+[0m14:51:27.940392 [info ] [Thread-1 (]: 1 of 8 START sql view model PALMAPROD_staging.stg_weather_current .............. [RUN]
+[0m14:51:27.941035 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_WEATHER_PALMAPROD_staging, now model.weather_project.stg_weather_current)
+[0m14:51:27.941567 [debug] [Thread-1 (]: Began compiling node model.weather_project.stg_weather_current
+[0m14:51:27.952025 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.stg_weather_current"
+[0m14:51:27.953787 [debug] [Thread-1 (]: Began executing node model.weather_project.stg_weather_current
+[0m14:51:27.988800 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.stg_weather_current"
+[0m14:51:27.990262 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.stg_weather_current"
+[0m14:51:27.990804 [debug] [Thread-1 (]: On model.weather_project.stg_weather_current: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.stg_weather_current"} */
+create or replace   view WEATHER.PALMAPROD_staging.stg_weather_current
+  
+   as (
+    
+
+SELECT
+    TO_TIMESTAMP_NTZ(FECHA) AS date_time,
+    CAST(TEMPERATURA_ACTUAL AS NUMBER(4,1)) AS temperature,
+    CAST(HUMEDAD AS NUMBER(4,1)) AS humidity,
+    CAST(VIENTO AS NUMBER(4,1)) AS wind_speed,
+    STATESKY:description::STRING AS sky_condition,
+    _AIRBYTE_EXTRACTED_AT AS extracted_at
+FROM WEATHER.PALMA.PALMA
+  );
+[0m14:51:28.231977 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.241 seconds
+[0m14:51:28.263218 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8e7be0>]}
+[0m14:51:28.264282 [info ] [Thread-1 (]: 1 of 8 OK created sql view model PALMAPROD_staging.stg_weather_current ......... [[32mSUCCESS 1[0m in 0.32s]
+[0m14:51:28.265199 [debug] [Thread-1 (]: Finished running node model.weather_project.stg_weather_current
+[0m14:51:28.265914 [debug] [Thread-1 (]: Began running node model.weather_project.stg_weather_forecast_daily
+[0m14:51:28.266811 [info ] [Thread-1 (]: 2 of 8 START sql view model PALMAPROD_staging.stg_weather_forecast_daily ....... [RUN]
+[0m14:51:28.267513 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.stg_weather_current, now model.weather_project.stg_weather_forecast_daily)
+[0m14:51:28.268091 [debug] [Thread-1 (]: Began compiling node model.weather_project.stg_weather_forecast_daily
+[0m14:51:28.272652 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.stg_weather_forecast_daily"
+[0m14:51:28.273660 [debug] [Thread-1 (]: Began executing node model.weather_project.stg_weather_forecast_daily
+[0m14:51:28.279719 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.stg_weather_forecast_daily"
+[0m14:51:28.283506 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.stg_weather_forecast_daily"
+[0m14:51:28.284358 [debug] [Thread-1 (]: On model.weather_project.stg_weather_forecast_daily: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.stg_weather_forecast_daily"} */
+create or replace   view WEATHER.PALMAPROD_staging.stg_weather_forecast_daily
+  
+   as (
+    
+
+WITH forecast_data AS (
+    SELECT
+        PROXIMOS_DIAS AS forecast_days,
+        _AIRBYTE_EXTRACTED_AT AS extracted_at
+    FROM WEATHER.PALMA.PALMA
+)
+
+SELECT
+    extracted_at,
+    forecast_date,
+    max_temp,
+    min_temp,
+    max_humidity,
+    min_humidity,
+    -- Interpolate precipitation_probability
+    COALESCE(
+        precipitation_probability,
+        (PREV_PRECIP + NEXT_PRECIP) / 2,
+        0
+    ) AS precipitation_probability,
+    -- Interpolate sky_condition using previous non-null value
+    COALESCE(
+        sky_condition,
+        PREV_SKY
+    ) AS sky_condition,
+    -- Interpolate uv_index
+    COALESCE(
+        uv_index,
+        (PREV_UV + NEXT_UV) / 2,
+        0
+    ) AS uv_index
+FROM (
+    SELECT
+        extracted_at,
+        f.value:"@attributes":fecha::STRING AS forecast_date,
+        f.value:temperatura:maxima::NUMBER(4,1) AS max_temp,
+        f.value:temperatura:minima::NUMBER(4,1) AS min_temp,
+        f.value:humedad_relativa:maxima::NUMBER(4,1) AS max_humidity,
+        f.value:humedad_relativa:minima::NUMBER(4,1) AS min_humidity,
+        f.value:prob_precipitacion[0]::NUMBER AS precipitation_probability,
+        f.value:estado_cielo_descripcion[0]::STRING AS sky_condition,
+        f.value:uv_max::NUMBER AS uv_index,
+        -- Previous and next non-null for interpolation
+        LAG(f.value:prob_precipitacion[0]::NUMBER) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS PREV_PRECIP,
+        LEAD(f.value:prob_precipitacion[0]::NUMBER) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS NEXT_PRECIP,
+        LAG(f.value:estado_cielo_descripcion[0]::STRING) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS PREV_SKY,
+        LAG(f.value:uv_max::NUMBER) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS PREV_UV,
+        LEAD(f.value:uv_max::NUMBER) IGNORE NULLS OVER (ORDER BY f.value:"@attributes":fecha::STRING) AS NEXT_UV
+    FROM forecast_data,
+    LATERAL FLATTEN(input => forecast_days) f
+)
+  );
+[0m14:51:28.554467 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.269 seconds
+[0m14:51:28.558462 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1287b4790>]}
+[0m14:51:28.559536 [info ] [Thread-1 (]: 2 of 8 OK created sql view model PALMAPROD_staging.stg_weather_forecast_daily .. [[32mSUCCESS 1[0m in 0.29s]
+[0m14:51:28.560437 [debug] [Thread-1 (]: Finished running node model.weather_project.stg_weather_forecast_daily
+[0m14:51:28.561067 [debug] [Thread-1 (]: Began running node model.weather_project.stg_weather_forecast_hourly
+[0m14:51:28.562011 [info ] [Thread-1 (]: 3 of 8 START sql view model PALMAPROD_staging.stg_weather_forecast_hourly ...... [RUN]
+[0m14:51:28.562905 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.stg_weather_forecast_daily, now model.weather_project.stg_weather_forecast_hourly)
+[0m14:51:28.563529 [debug] [Thread-1 (]: Began compiling node model.weather_project.stg_weather_forecast_hourly
+[0m14:51:28.568420 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.stg_weather_forecast_hourly"
+[0m14:51:28.569661 [debug] [Thread-1 (]: Began executing node model.weather_project.stg_weather_forecast_hourly
+[0m14:51:28.573850 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.stg_weather_forecast_hourly"
+[0m14:51:28.578115 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.stg_weather_forecast_hourly"
+[0m14:51:28.578934 [debug] [Thread-1 (]: On model.weather_project.stg_weather_forecast_hourly: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.stg_weather_forecast_hourly"} */
+create or replace   view WEATHER.PALMAPROD_staging.stg_weather_forecast_hourly
+  
+   as (
+    
+
+WITH hourly_data AS (
+    SELECT
+        PRONOSTICO:hoy AS hourly_forecast,
+        _AIRBYTE_EXTRACTED_AT AS extracted_at
+    FROM WEATHER.PALMA.PALMA
+),
+
+forecast_date AS (
+    SELECT
+        extracted_at,
+        hourly_forecast:"@attributes":fecha::STRING AS forecast_date
+    FROM hourly_data
+),
+
+temperatures AS (
+    SELECT
+        h.extracted_at,
+        fd.forecast_date,
+        f.index AS hour_index,
+        f.value::NUMBER(4,1) AS temperature
+    FROM hourly_data h
+    JOIN forecast_date fd ON h.extracted_at = fd.extracted_at
+    , LATERAL FLATTEN(input => h.hourly_forecast:temperatura) f
+),
+
+humidity AS (
+    SELECT
+        h.extracted_at,
+        fd.forecast_date,
+        f.index AS hour_index,
+        f.value::NUMBER(4,1) AS humidity
+    FROM hourly_data h
+    JOIN forecast_date fd ON h.extracted_at = fd.extracted_at
+    , LATERAL FLATTEN(input => h.hourly_forecast:humedad_relativa) f
+),
+
+sky_conditions AS (
+    SELECT
+        h.extracted_at,
+        fd.forecast_date,
+        f.index AS hour_index,
+        f.value::STRING AS sky_condition
+    FROM hourly_data h
+    JOIN forecast_date fd ON h.extracted_at = fd.extracted_at
+    , LATERAL FLATTEN(input => h.hourly_forecast:estado_cielo_descripcion) f
+),
+
+wind AS (
+    SELECT
+        h.extracted_at,
+        fd.forecast_date,
+        f.value:"@attributes":periodo::NUMBER AS hour_index,
+        f.value:direccion::STRING AS wind_direction,
+        f.value:velocidad::NUMBER AS wind_speed
+    FROM hourly_data h
+    JOIN forecast_date fd ON h.extracted_at = fd.extracted_at
+    , LATERAL FLATTEN(input => h.hourly_forecast:viento) f
+)
+
+SELECT
+    t.extracted_at,
+    t.forecast_date,
+    t.hour_index,
+    CASE 
+        WHEN t.hour_index = 0 THEN '00:00'
+        WHEN t.hour_index = 6 THEN '06:00'
+        WHEN t.hour_index = 12 THEN '12:00'
+        WHEN t.hour_index = 18 THEN '18:00'
+        ELSE t.hour_index || ':00'
+    END AS time_of_day,
+    COALESCE(t.temperature, 0) AS temperature,
+    COALESCE(h.humidity, 0) AS humidity,
+    COALESCE(s.sky_condition, 'unknown') AS sky_condition,
+    COALESCE(w.wind_direction, 'unknown') AS wind_direction,
+    COALESCE(w.wind_speed, 0) AS wind_speed
+FROM temperatures t
+LEFT JOIN humidity h ON t.extracted_at = h.extracted_at AND t.hour_index = h.hour_index AND t.forecast_date = h.forecast_date
+LEFT JOIN sky_conditions s ON t.extracted_at = s.extracted_at AND t.hour_index = s.hour_index AND t.forecast_date = s.forecast_date
+LEFT JOIN wind w ON t.extracted_at = w.extracted_at AND t.hour_index = w.hour_index AND t.forecast_date = w.forecast_date
+  );
+[0m14:51:28.844660 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.265 seconds
+[0m14:51:28.847335 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128310580>]}
+[0m14:51:28.848106 [info ] [Thread-1 (]: 3 of 8 OK created sql view model PALMAPROD_staging.stg_weather_forecast_hourly . [[32mSUCCESS 1[0m in 0.28s]
+[0m14:51:28.848866 [debug] [Thread-1 (]: Finished running node model.weather_project.stg_weather_forecast_hourly
+[0m14:51:28.849384 [debug] [Thread-1 (]: Began running node model.weather_project.weather_current_metrics
+[0m14:51:28.850034 [info ] [Thread-1 (]: 4 of 8 START sql incremental model PALMAPROD_marts.weather_current_metrics ..... [RUN]
+[0m14:51:28.850609 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.stg_weather_forecast_hourly, now model.weather_project.weather_current_metrics)
+[0m14:51:28.851094 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_current_metrics
+[0m14:51:28.855315 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_current_metrics"
+[0m14:51:28.856492 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_current_metrics
+[0m14:51:28.919631 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_current_metrics"
+[0m14:51:28.920993 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m14:51:28.921537 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_current_metrics"} */
+create or replace transient table WEATHER.PALMAPROD_marts.weather_current_metrics
+    
+
+    
+    as (
+
+SELECT 
+    date_time,
+    temperature,
+    humidity,
+    wind_speed,
+    sky_condition,
+    extracted_at
+FROM WEATHER.PALMAPROD_staging.stg_weather_current
+
+
+    )
+;
+[0m14:51:30.020431 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.098 seconds
+[0m14:51:30.031149 [debug] [Thread-1 (]: Applying DROP to: WEATHER.PALMAPROD_marts.weather_current_metrics__dbt_tmp
+[0m14:51:30.038235 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_current_metrics"
+[0m14:51:30.038766 [debug] [Thread-1 (]: On model.weather_project.weather_current_metrics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_current_metrics"} */
+drop view if exists WEATHER.PALMAPROD_marts.weather_current_metrics__dbt_tmp cascade
+[0m14:51:30.100610 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.061 seconds
+[0m14:51:30.104031 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127f6fac0>]}
+[0m14:51:30.105037 [info ] [Thread-1 (]: 4 of 8 OK created sql incremental model PALMAPROD_marts.weather_current_metrics  [[32mSUCCESS 1[0m in 1.25s]
+[0m14:51:30.105829 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_current_metrics
+[0m14:51:30.106558 [debug] [Thread-1 (]: Began running node model.weather_project.weather_daily_summary
+[0m14:51:30.107505 [info ] [Thread-1 (]: 5 of 8 START sql incremental model PALMAPROD_marts.weather_daily_summary ....... [RUN]
+[0m14:51:30.108240 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.weather_current_metrics, now model.weather_project.weather_daily_summary)
+[0m14:51:30.108767 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_daily_summary
+[0m14:51:30.113214 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_daily_summary"
+[0m14:51:30.114756 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_daily_summary
+[0m14:51:30.119051 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_daily_summary"
+[0m14:51:30.120925 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m14:51:30.121477 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_daily_summary"} */
+create or replace transient table WEATHER.PALMAPROD_marts.weather_daily_summary
+    
+
+    
+    as (
+
+SELECT
+    TO_DATE(forecast_date) AS date,
+    MAX(extracted_at) AS last_updated,
+    AVG(max_temp) AS avg_max_temp,
+    AVG(min_temp) AS avg_min_temp,
+    MAX(max_temp) AS highest_temp,
+    MIN(min_temp) AS lowest_temp,
+    AVG(precipitation_probability) AS avg_precipitation_prob,
+    MAX(precipitation_probability) AS max_precipitation_prob,
+    MAX(uv_index) AS max_uv_index,
+    LISTAGG(DISTINCT sky_condition, ', ') AS weather_conditions
+FROM WEATHER.PALMAPROD_staging.stg_weather_forecast_daily
+
+GROUP BY date
+ORDER BY date
+    )
+;
+[0m14:51:31.126312 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.004 seconds
+[0m14:51:31.130487 [debug] [Thread-1 (]: Applying DROP to: WEATHER.PALMAPROD_marts.weather_daily_summary__dbt_tmp
+[0m14:51:31.131877 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_summary"
+[0m14:51:31.132431 [debug] [Thread-1 (]: On model.weather_project.weather_daily_summary: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_daily_summary"} */
+drop view if exists WEATHER.PALMAPROD_marts.weather_daily_summary__dbt_tmp cascade
+[0m14:51:31.191497 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.058 seconds
+[0m14:51:31.194321 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127f6fac0>]}
+[0m14:51:31.195322 [info ] [Thread-1 (]: 5 of 8 OK created sql incremental model PALMAPROD_marts.weather_daily_summary .. [[32mSUCCESS 1[0m in 1.09s]
+[0m14:51:31.196185 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_daily_summary
+[0m14:51:31.197246 [debug] [Thread-1 (]: Began running node model.weather_project.weather_daily_snapshot
+[0m14:51:31.197992 [info ] [Thread-1 (]: 6 of 8 START sql incremental model PALMAPROD_marts.weather_daily_snapshot ...... [RUN]
+[0m14:51:31.198834 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.weather_daily_summary, now model.weather_project.weather_daily_snapshot)
+[0m14:51:31.199410 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_daily_snapshot
+[0m14:51:31.204900 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_daily_snapshot"
+[0m14:51:31.206243 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_daily_snapshot
+[0m14:51:31.213411 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_daily_snapshot"
+[0m14:51:31.215564 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m14:51:31.216206 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_daily_snapshot"} */
+create or replace transient table WEATHER.PALMAPROD_marts.weather_daily_snapshot
+    
+
+    
+    as (
+
+WITH latest_current AS (
+    SELECT
+        date_time::date AS date,
+        temperature AS current_temperature,
+        humidity AS current_humidity,
+        wind_speed AS current_wind_speed,
+        sky_condition AS current_sky_condition,
+        extracted_at,
+        ROW_NUMBER() OVER (PARTITION BY date_time::date ORDER BY extracted_at DESC) AS rn
+    FROM WEATHER.PALMAPROD_marts.weather_current_metrics
+)
+
+SELECT
+    d.*, 
+    l.current_temperature,
+    l.current_humidity,
+    l.current_wind_speed,
+    l.current_sky_condition,
+    l.extracted_at AS current_extracted_at
+FROM WEATHER.PALMAPROD_marts.weather_daily_summary d
+LEFT JOIN latest_current l ON d.date = l.date AND l.rn = 1
+
+ORDER BY d.date
+    )
+;
+[0m14:51:32.122394 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.905 seconds
+[0m14:51:32.127257 [debug] [Thread-1 (]: Applying DROP to: WEATHER.PALMAPROD_marts.weather_daily_snapshot__dbt_tmp
+[0m14:51:32.128842 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_daily_snapshot"
+[0m14:51:32.129426 [debug] [Thread-1 (]: On model.weather_project.weather_daily_snapshot: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_daily_snapshot"} */
+drop view if exists WEATHER.PALMAPROD_marts.weather_daily_snapshot__dbt_tmp cascade
+[0m14:51:32.189090 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.059 seconds
+[0m14:51:32.192511 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128c5aef0>]}
+[0m14:51:32.193395 [info ] [Thread-1 (]: 6 of 8 OK created sql incremental model PALMAPROD_marts.weather_daily_snapshot . [[32mSUCCESS 1[0m in 0.99s]
+[0m14:51:32.194326 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_daily_snapshot
+[0m14:51:32.194938 [debug] [Thread-1 (]: Began running node model.weather_project.weather_extremes
+[0m14:51:32.195631 [info ] [Thread-1 (]: 7 of 8 START sql incremental model PALMAPROD_marts.weather_extremes ............ [RUN]
+[0m14:51:32.196273 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.weather_daily_snapshot, now model.weather_project.weather_extremes)
+[0m14:51:32.196782 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_extremes
+[0m14:51:32.201121 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_extremes"
+[0m14:51:32.201906 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_extremes
+[0m14:51:32.206247 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_extremes"
+[0m14:51:32.207907 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m14:51:32.208447 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_extremes"} */
+create or replace transient table WEATHER.PALMAPROD_marts.weather_extremes
+    
+
+    
+    as (
+
+WITH extremes AS (
+    SELECT
+        date,
+        avg_max_temp,
+        avg_min_temp,
+        avg_precipitation_prob,
+        max_uv_index,
+        weather_conditions,
+        ROW_NUMBER() OVER (ORDER BY avg_max_temp DESC) AS hottest_day,
+        ROW_NUMBER() OVER (ORDER BY avg_min_temp ASC) AS coldest_day,
+        ROW_NUMBER() OVER (ORDER BY avg_precipitation_prob DESC) AS wettest_day,
+        ROW_NUMBER() OVER (ORDER BY max_uv_index DESC) AS highest_uv_day
+    FROM WEATHER.PALMAPROD_marts.weather_daily_summary
+)
+
+SELECT * FROM extremes
+WHERE (hottest_day = 1 OR coldest_day = 1 OR wettest_day = 1 OR highest_uv_day = 1)
+
+ORDER BY date
+    )
+;
+[0m14:51:32.732956 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.524 seconds
+[0m14:51:32.737139 [debug] [Thread-1 (]: Applying DROP to: WEATHER.PALMAPROD_marts.weather_extremes__dbt_tmp
+[0m14:51:32.738373 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_extremes"
+[0m14:51:32.738880 [debug] [Thread-1 (]: On model.weather_project.weather_extremes: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_extremes"} */
+drop view if exists WEATHER.PALMAPROD_marts.weather_extremes__dbt_tmp cascade
+[0m14:51:32.800699 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.061 seconds
+[0m14:51:32.804126 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x128311750>]}
+[0m14:51:32.805010 [info ] [Thread-1 (]: 7 of 8 OK created sql incremental model PALMAPROD_marts.weather_extremes ....... [[32mSUCCESS 1[0m in 0.61s]
+[0m14:51:32.805935 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_extremes
+[0m14:51:32.806555 [debug] [Thread-1 (]: Began running node model.weather_project.weather_trends
+[0m14:51:32.807348 [info ] [Thread-1 (]: 8 of 8 START sql incremental model PALMAPROD_marts.weather_trends .............. [RUN]
+[0m14:51:32.807971 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.weather_project.weather_extremes, now model.weather_project.weather_trends)
+[0m14:51:32.808459 [debug] [Thread-1 (]: Began compiling node model.weather_project.weather_trends
+[0m14:51:32.812828 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_project.weather_trends"
+[0m14:51:32.814362 [debug] [Thread-1 (]: Began executing node model.weather_project.weather_trends
+[0m14:51:32.820176 [debug] [Thread-1 (]: Writing runtime sql for node "model.weather_project.weather_trends"
+[0m14:51:32.822050 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m14:51:32.822637 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_trends"} */
+create or replace transient table WEATHER.PALMAPROD_marts.weather_trends
+    
+
+    
+    as (
+
+SELECT
+    date,
+    avg_max_temp,
+    avg_min_temp,
+    avg_precipitation_prob,
+    max_uv_index,
+    weather_conditions,
+    LAG(avg_max_temp) OVER (ORDER BY date) AS prev_avg_max_temp,
+    LAG(avg_min_temp) OVER (ORDER BY date) AS prev_avg_min_temp,
+    LAG(avg_precipitation_prob) OVER (ORDER BY date) AS prev_avg_precipitation_prob,
+    LAG(max_uv_index) OVER (ORDER BY date) AS prev_max_uv_index,
+    avg_max_temp - LAG(avg_max_temp) OVER (ORDER BY date) AS delta_max_temp,
+    avg_min_temp - LAG(avg_min_temp) OVER (ORDER BY date) AS delta_min_temp,
+    avg_precipitation_prob - LAG(avg_precipitation_prob) OVER (ORDER BY date) AS delta_precipitation_prob,
+    max_uv_index - LAG(max_uv_index) OVER (ORDER BY date) AS delta_uv_index
+FROM WEATHER.PALMAPROD_marts.weather_daily_summary
+
+ORDER BY date
+    )
+;
+[0m14:51:33.416821 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.594 seconds
+[0m14:51:33.421736 [debug] [Thread-1 (]: Applying DROP to: WEATHER.PALMAPROD_marts.weather_trends__dbt_tmp
+[0m14:51:33.423403 [debug] [Thread-1 (]: Using snowflake connection "model.weather_project.weather_trends"
+[0m14:51:33.424051 [debug] [Thread-1 (]: On model.weather_project.weather_trends: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "weather_project", "target_name": "PALMAPROD", "node_id": "model.weather_project.weather_trends"} */
+drop view if exists WEATHER.PALMAPROD_marts.weather_trends__dbt_tmp cascade
+[0m14:51:33.483928 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.059 seconds
+[0m14:51:33.487107 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f25621e6-bac8-4f1f-b023-1839b2b6a6a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b8e7be0>]}
+[0m14:51:33.487987 [info ] [Thread-1 (]: 8 of 8 OK created sql incremental model PALMAPROD_marts.weather_trends ......... [[32mSUCCESS 1[0m in 0.68s]
+[0m14:51:33.488837 [debug] [Thread-1 (]: Finished running node model.weather_project.weather_trends
+[0m14:51:33.490273 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:51:33.490752 [debug] [MainThread]: Connection 'model.weather_project.weather_trends' was left open.
+[0m14:51:33.491233 [debug] [MainThread]: On model.weather_project.weather_trends: Close
+[0m14:51:33.580855 [info ] [MainThread]: 
+[0m14:51:33.581476 [info ] [MainThread]: Finished running 5 incremental models, 3 view models in 0 hours 0 minutes and 7.15 seconds (7.15s).
+[0m14:51:33.583667 [debug] [MainThread]: Command end result
+[0m14:51:33.624025 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/toniamayaobrador/dbt weather project/target/manifest.json
+[0m14:51:33.626019 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/toniamayaobrador/dbt weather project/target/semantic_manifest.json
+[0m14:51:33.634724 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/toniamayaobrador/dbt weather project/target/run_results.json
+[0m14:51:33.635224 [info ] [MainThread]: 
+[0m14:51:33.635740 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:51:33.636190 [info ] [MainThread]: 
+[0m14:51:33.636649 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m14:51:33.641706 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.667835, "process_in_blocks": "0", "process_kernel_time": 1.182346, "process_mem_max_rss": "195948544", "process_out_blocks": "0", "process_user_time": 6.154635}
+[0m14:51:33.642325 [debug] [MainThread]: Command `dbt run` succeeded at 14:51:33.642190 after 11.67 seconds
+[0m14:51:33.642839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d43ef50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1285d8e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1285dbd60>]}
+[0m14:51:33.643349 [debug] [MainThread]: Flushing usage events
+[0m14:51:34.210786 [debug] [MainThread]: An error was encountered while trying to flush usage events

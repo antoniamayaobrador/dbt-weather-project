@@ -1,30 +1,38 @@
--- back compat for old kwarg name
+
   
-  begin;
     
-        
-            
-	    
-	    
-            
-        
+
+create or replace transient table WEATHER.PALMAPROD_marts.weather_daily_snapshot
     
 
     
+    as (
 
-    merge into WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot as DBT_INTERNAL_DEST
-        using WEATHER.dbt_antoniamaya_marts.weather_daily_snapshot__dbt_tmp as DBT_INTERNAL_SOURCE
-        on ((DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date))
+WITH latest_current AS (
+    SELECT
+        date_time::date AS date,
+        temperature AS current_temperature,
+        humidity AS current_humidity,
+        wind_speed AS current_wind_speed,
+        sky_condition AS current_sky_condition,
+        extracted_at,
+        ROW_NUMBER() OVER (PARTITION BY date_time::date ORDER BY extracted_at DESC) AS rn
+    FROM WEATHER.PALMAPROD_marts.weather_current_metrics
+)
 
-    
-    when matched then update set
-        "DATE" = DBT_INTERNAL_SOURCE."DATE","LAST_UPDATED" = DBT_INTERNAL_SOURCE."LAST_UPDATED","AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."AVG_MAX_TEMP","AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."AVG_MIN_TEMP","HIGHEST_TEMP" = DBT_INTERNAL_SOURCE."HIGHEST_TEMP","LOWEST_TEMP" = DBT_INTERNAL_SOURCE."LOWEST_TEMP","AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."AVG_PRECIPITATION_PROB","MAX_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."MAX_PRECIPITATION_PROB","MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."MAX_UV_INDEX","WEATHER_CONDITIONS" = DBT_INTERNAL_SOURCE."WEATHER_CONDITIONS","CURRENT_TEMPERATURE" = DBT_INTERNAL_SOURCE."CURRENT_TEMPERATURE","CURRENT_HUMIDITY" = DBT_INTERNAL_SOURCE."CURRENT_HUMIDITY","CURRENT_WIND_SPEED" = DBT_INTERNAL_SOURCE."CURRENT_WIND_SPEED","CURRENT_SKY_CONDITION" = DBT_INTERNAL_SOURCE."CURRENT_SKY_CONDITION","CURRENT_EXTRACTED_AT" = DBT_INTERNAL_SOURCE."CURRENT_EXTRACTED_AT"
-    
+SELECT
+    d.*, 
+    l.current_temperature,
+    l.current_humidity,
+    l.current_wind_speed,
+    l.current_sky_condition,
+    l.extracted_at AS current_extracted_at
+FROM WEATHER.PALMAPROD_marts.weather_daily_summary d
+LEFT JOIN latest_current l ON d.date = l.date AND l.rn = 1
 
-    when not matched then insert
-        ("DATE", "LAST_UPDATED", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "HIGHEST_TEMP", "LOWEST_TEMP", "AVG_PRECIPITATION_PROB", "MAX_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "CURRENT_TEMPERATURE", "CURRENT_HUMIDITY", "CURRENT_WIND_SPEED", "CURRENT_SKY_CONDITION", "CURRENT_EXTRACTED_AT")
-    values
-        ("DATE", "LAST_UPDATED", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "HIGHEST_TEMP", "LOWEST_TEMP", "AVG_PRECIPITATION_PROB", "MAX_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS", "CURRENT_TEMPERATURE", "CURRENT_HUMIDITY", "CURRENT_WIND_SPEED", "CURRENT_SKY_CONDITION", "CURRENT_EXTRACTED_AT")
-
+ORDER BY d.date
+    )
 ;
-    commit;
+
+
+  

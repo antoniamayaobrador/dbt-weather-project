@@ -1,30 +1,30 @@
--- back compat for old kwarg name
+
   
-  begin;
     
-        
-            
-	    
-	    
-            
-        
+
+create or replace transient table WEATHER.PALMAPROD_marts.weather_daily_summary
     
 
     
+    as (
 
-    merge into WEATHER.dbt_antoniamaya_marts.weather_daily_summary as DBT_INTERNAL_DEST
-        using WEATHER.dbt_antoniamaya_marts.weather_daily_summary__dbt_tmp as DBT_INTERNAL_SOURCE
-        on ((DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date))
+SELECT
+    TO_DATE(forecast_date) AS date,
+    MAX(extracted_at) AS last_updated,
+    AVG(max_temp) AS avg_max_temp,
+    AVG(min_temp) AS avg_min_temp,
+    MAX(max_temp) AS highest_temp,
+    MIN(min_temp) AS lowest_temp,
+    AVG(precipitation_probability) AS avg_precipitation_prob,
+    MAX(precipitation_probability) AS max_precipitation_prob,
+    MAX(uv_index) AS max_uv_index,
+    LISTAGG(DISTINCT sky_condition, ', ') AS weather_conditions
+FROM WEATHER.PALMAPROD_staging.stg_weather_forecast_daily
 
-    
-    when matched then update set
-        "DATE" = DBT_INTERNAL_SOURCE."DATE","LAST_UPDATED" = DBT_INTERNAL_SOURCE."LAST_UPDATED","AVG_MAX_TEMP" = DBT_INTERNAL_SOURCE."AVG_MAX_TEMP","AVG_MIN_TEMP" = DBT_INTERNAL_SOURCE."AVG_MIN_TEMP","HIGHEST_TEMP" = DBT_INTERNAL_SOURCE."HIGHEST_TEMP","LOWEST_TEMP" = DBT_INTERNAL_SOURCE."LOWEST_TEMP","AVG_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."AVG_PRECIPITATION_PROB","MAX_PRECIPITATION_PROB" = DBT_INTERNAL_SOURCE."MAX_PRECIPITATION_PROB","MAX_UV_INDEX" = DBT_INTERNAL_SOURCE."MAX_UV_INDEX","WEATHER_CONDITIONS" = DBT_INTERNAL_SOURCE."WEATHER_CONDITIONS"
-    
-
-    when not matched then insert
-        ("DATE", "LAST_UPDATED", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "HIGHEST_TEMP", "LOWEST_TEMP", "AVG_PRECIPITATION_PROB", "MAX_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS")
-    values
-        ("DATE", "LAST_UPDATED", "AVG_MAX_TEMP", "AVG_MIN_TEMP", "HIGHEST_TEMP", "LOWEST_TEMP", "AVG_PRECIPITATION_PROB", "MAX_PRECIPITATION_PROB", "MAX_UV_INDEX", "WEATHER_CONDITIONS")
-
+GROUP BY date
+ORDER BY date
+    )
 ;
-    commit;
+
+
+  
