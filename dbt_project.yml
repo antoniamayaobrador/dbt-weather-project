@@ -2,7 +2,7 @@ name: 'weather_project'
 version: '1.0.0'
 config-version: 2
 
-profile: 'weather_project'
+profile: 'prod'
 
 target-path: "target"
 clean-targets:
