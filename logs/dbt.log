@@ -19593,3 +19593,17 @@ drop view if exists WEATHER.PALMAPROD_marts.weather_trends__dbt_tmp cascade
 [0m14:51:33.642839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d43ef50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1285d8e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1285dbd60>]}
 [0m14:51:33.643349 [debug] [MainThread]: Flushing usage events
 [0m14:51:34.210786 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:37:34.401896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110616e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113d7d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1113d6ec0>]}
+
+
+============================== 11:37:34.408025 | 6894ddaf-e7fe-499d-bc02-36309e2a57bf ==============================
+[0m11:37:34.408025 [info ] [MainThread]: Running with dbt=1.9.4
+[0m11:37:34.408843 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/toniamayaobrador/dbt weather project/logs', 'debug': 'False', 'profiles_dir': '/Users/toniamayaobrador/dbt weather project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt parse', 'send_anonymous_usage_stats': 'True'}
+[0m11:37:34.417486 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_ACCOUNT'
+[0m11:37:34.421325 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 0.11744423, "process_in_blocks": "0", "process_kernel_time": 0.288165, "process_mem_max_rss": "94699520", "process_out_blocks": "0", "process_user_time": 1.721174}
+[0m11:37:34.422108 [debug] [MainThread]: Command `dbt parse` failed at 11:37:34.421944 after 0.12 seconds
+[0m11:37:34.422690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110616e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111343250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111341150>]}
+[0m11:37:34.423278 [debug] [MainThread]: Flushing usage events
+[0m11:37:34.861769 [debug] [MainThread]: An error was encountered while trying to flush usage events
