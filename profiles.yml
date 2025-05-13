@@ -1,7 +1,7 @@
-weather_project:
-  target: dev
+prod:
+  target: prod
   outputs:
-    dev:
+    prod:
       type: snowflake
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"
@@ -13,7 +13,7 @@ weather_project:
       threads: 1
       client_session_keep_alive: False
 
-    prod:
+    dev:
       type: snowflake
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"
@@ -36,4 +36,3 @@ weather_project:
       schema: "PALMAPROD"
       threads: 1
       client_session_keep_alive: False
-    
